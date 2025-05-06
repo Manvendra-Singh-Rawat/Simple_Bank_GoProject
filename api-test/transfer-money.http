@@ -1,0 +1,9 @@
+POST http://localhost:8080/transfermoney
+Content-Type: "application/json"
+
+{
+    "FromAccountID": 1,
+    "ToAccountID": 2,
+    "Amount": 25,
+    "Currency": "INR"
+}
