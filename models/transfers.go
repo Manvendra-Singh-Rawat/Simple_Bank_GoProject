@@ -11,7 +11,7 @@ type TransferMoney struct {
 	FromAccountID int    `json:"FromAccountID" binding:"required"`
 	ToAccountID   int    `json:"ToAccountID" binding:"required"`
 	Amount        int    `json:"Amount" binding:"required"`
-	Currency      string `json:"Currency" binding:"required,oneof=INR USD"`
+	Currency      string `json:"Currency" binding:"required,currency"`
 }
 
 func (transfer TransferMoney) CreateTransfer() error {

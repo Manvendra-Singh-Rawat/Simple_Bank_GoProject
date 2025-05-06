@@ -8,7 +8,7 @@ import (
 type Accounts struct {
 	Owner    string `json:"owner" binding:"required"`
 	Balance  *int   `json:"balance" binding:"required"`
-	Currency string `json:"currency" binding:"required,oneof=INR USD"`
+	Currency string `json:"currency" binding:"required,currency"`
 }
 
 type AddMoney struct {

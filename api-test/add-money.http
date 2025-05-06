@@ -2,7 +2,7 @@ POST http://localhost:8080/addmoney
 Content-Type: "application/json"
 
 {
-    "AccountID": 6,
+    "AccountID": 1,
     "Amount": 100,
-    "Currency": "USD"
+    "Currency": "INR"
 }

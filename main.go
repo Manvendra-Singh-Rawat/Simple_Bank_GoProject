@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	// fmt.Print(os.Getenv("DATABASE_URL"))
 	db.DBConnection()
 	server := gin.Default()
 	routes.RegisterRoutes(server)
