@@ -15,8 +15,14 @@ func RegisterRoutes(server *gin.Engine) {
 		v.RegisterValidation("currency", utils.ValidCurrency)
 	}
 
+	// Account routes
 	server.POST("/accounts", createNewAccount)     // Working
 	server.GET("/accounts/:id", getAccountDetails) // Working
+
+	// User routes
+	server.POST("/users", createUser) // Create new user
+
+	// Transfer routes
 	server.POST("/transfermoney", transferMoney)
 	server.POST("/addmoney", addMoney) // Working
 }
